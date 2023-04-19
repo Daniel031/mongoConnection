@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+    color: rgb(0, 0, 0);
+}
+#contentWrap{
+    visibility: visible;
+}
+
+#nickWrap{
+    visibility: hidden;
+}
+
+#chat{
+    height: 350px;
+    overflow: scroll;
+} 

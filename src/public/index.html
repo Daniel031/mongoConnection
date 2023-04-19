@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chat js fullStack</title>
+
+</head>
+<body>
+    <nav class="navbar nabvar-light bg-warning">
+        <a class="navbar-brand mx-auto"  href="/">Chat Con OpenIA</a>
+    </nav>
+
+    <!--
+    <div class="card col-md-4 mt-5 mx-auto" id="nickWrap">
+        <div class="card-header">
+            <h3>Enter your Username</h3>
+        </div>
+        <p id="nickError"></p>
+        <div class="card-body">
+            <form id="nickForm">
+                <input type="text" id="nickname" class="form-control">
+                <input type="submit" value="Register" class="btn btn-warning btn-blog mt-2">
+            </form>
+        </div>
+
+    </div>
+    -->
+
+    <div class="container" id="contentWrap">
+        <div >
+            <div class="col-md-12 mt-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Iniciar Chat</h4>
+                    </div>
+                    <div id = "chat" class="card-body">
+
+                    </div>
+                    <form class="card-footer" id="message-form">
+                        <div class="input-group">
+                            <input type="text" id ="message" class="form-control"> 
+                            <div class="input-group-append">
+                              <input type="submit" class = "btn btn-warning" value="Enviar"> 
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+         <!--  <div class="card col-md-3 " hidden>
+                <div class="card-header">
+                    <h3>Users</h3>
+                </div>
+                <div class="card-body">
+                    <div id="usernames"></div>
+                </div>
+            </div> --> 
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
